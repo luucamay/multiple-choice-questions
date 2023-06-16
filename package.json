@@ -24,7 +24,7 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "deploy": "npm run build && cd build/ && surge ./ --domain fcc-quiz.surge.sh",
+    "deploy": "npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
