@@ -1,4 +1,4 @@
-# Web Application with Multiple Choice for the driving license test Bolivia 
+# Multiple Choice WebApp with the questions for the driving license test in Bolivia 
 
 This app was adapted from [this quiz app](https://github.com/bonham000/react-quiz-app) and the [FreeCodeCamp](https://github.com/freeCodeCamp/multiple-choice-questions) and provides a practice testing and development environment for Driving Test's theorical multiple-choice questions.
 
