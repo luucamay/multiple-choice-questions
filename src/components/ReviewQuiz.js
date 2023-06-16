@@ -7,7 +7,7 @@ import { findQuiz, mapScreenSizeToProps } from '../utils/helpers';
 
 const renderMarkup = (html) => {
   return (
-    <span dangerouslySetInnerHTML={{__html: html}}></span>
+    <span dangerouslySetInnerHTML={{ __html: html }}></span>
   );
 }
 
@@ -29,22 +29,22 @@ const renderQuestion = (question, index) => {
 
         <div className="col-md-4 col-sm-6">
           <h1>Choices</h1>
-        {choices.map((choice, index) => (
-          <div
-            key={choice}
-            className={solution === index ? 'choice reivew solution' : 'choice review'}>
-            <p>{renderMarkup(choice)}</p>
-          </div>
-        ))}
+          {choices.map((choice, index) => (
+            <div
+              key={choice}
+              className={solution === index ? 'choice reivew solution' : 'choice review'}>
+              <p>{renderMarkup(choice)}</p>
+            </div>
+          ))}
         </div>
 
         <div className="col-md-4 col-sm-12">
-        {explanation && (
-          <div className='explanation'>
-            <h1>Explanation</h1>
-            <p>{renderMarkup(explanation)}</p>
-          </div>
-        )}
+          {explanation && (
+            <div className='explanation'>
+              <h1>Explanation</h1>
+              <p>{renderMarkup(explanation)}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -64,23 +64,22 @@ class Review extends React.Component {
     Prism.highlightAll();
   }
   handleKeyDown = ({ code }) => {
-		if (code === 'Escape') this.props.history.push('/');
-	}
+    if (code === 'Escape') this.props.history.push('/');
+  }
   render() {
     const { quiz, screen } = this.props;
     if (!quiz) return null;
     const challenges = quiz.get('challenges');
     return (
       <div className='studyWrapper reviewContainer'>
-				<div className='studyContainer'>
+        <div className='studyContainer'>
           <div className='quizHeader'>
             <div className='quizTitle'>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fccLink"
-                href="http://freecodecamp.com/">
-                <img src="/assets/freeCodeCamp.png" alt="freeCodeCamp Logo" />
+                href="">
               </a>
               <span>{quiz.get('title')}</span>
             </div>
@@ -94,24 +93,24 @@ class Review extends React.Component {
             </span>}
           </div>
           {challenges.map(renderQuestion)}
-				</div>
-			</div>
+        </div>
+      </div>
     )
   }
 }
 
 const mapStateToProps = (state, props) => {
 
-	const { title } = props.match.params;
+  const { title } = props.match.params;
   const quizzes = state.get('quizzes');
 
-	const quiz = findQuiz(title.replace(/-/g, ' '), quizzes);
+  const quiz = findQuiz(title.replace(/-/g, ' '), quizzes);
 
   if (!quiz) {
     props.history.push('/');
   }
 
-	return { quiz };
+  return { quiz };
 
 };
 
