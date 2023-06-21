@@ -9,6 +9,7 @@ The purpose of these challenges is to study for my test tomorrow. Primary catego
 - **Normas de Circulación**
 - **Primeros Auxilios**
 - **Mecánica básica**
+- **Legislación Boliviana**
 
 ---
 
