@@ -24,3 +24,5 @@ TO DO
 
 1. make all the answers and questions start with upppercase letter by default
 1. Create a way users can sumbit/customize their questions like adding varios from a json, a spreadsheet, or a file, or maybe adding more manually
+1. Change to spanish the language
+1. Remove and rename files to their topics related

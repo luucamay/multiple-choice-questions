@@ -5,24 +5,18 @@
  * the content of these challenges.
  */
 
-import javascript from './01_javascript';
-import web from './02_web-technologies';
-import algorithms from './03_algorithms';
-import data from './04_data-storage';
-import system from './05_system-design';
-import design from './06_design-principles';
-import security from './07_security';
-import devops from './08_devops';
+import vial from './01_educacion-vial';
+import vial2 from './02_educacion-vial2';
+import auxilios from './03_primeros-auxilios';
+import mecanica from './04_mecanica-basica';
+import legislacion from './05_legislacion-boliviana';
 
 const challenges = [
-  javascript,
-  web,
-  algorithms,
-  data,
-  system,
-  design,
-  security,
-  devops
+  vial,
+  vial2,
+  auxilios,
+  mecanica,
+  legislacion
 ];
 
 /* This doesn't cover everything but serves as a basic verification that
