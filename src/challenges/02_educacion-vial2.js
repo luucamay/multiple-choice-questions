@@ -29,8 +29,8 @@
  *********************************** */
 
 export default {
-  title: `Educacion vial 2`,
-  category: `Educacion vial 2`,
+  title: `Educacion Vial 2`,
+  category: `Educacion Vial 2`,
   challenges: [
     {
       title: `Las maniobras prohibidas en la conduccion son:`,
