@@ -29,8 +29,8 @@
  *********************************** */
 
 export default {
-  title: `Mecánica básica`,
-  category: `Mecánica básica`,
+  title: `Mecánica Básica`,
+  category: `Mecánica Básica`,
   challenges: [
     {
       title: `La presión de los neumáticos se debe verificar:`,

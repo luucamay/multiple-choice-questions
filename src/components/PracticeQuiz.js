@@ -132,8 +132,9 @@ export default class Quiz extends React.Component {
     }
   }
   renderMarkup = (html) => {
+    const newHtml = html.charAt(0).toUpperCase() + html.slice(1).toLowerCase()
     return (
-      <span dangerouslySetInnerHTML={{ __html: html }}></span>
+      <span dangerouslySetInnerHTML={{ __html: newHtml }}></span>
     );
   }
   render() {
