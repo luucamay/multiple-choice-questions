@@ -15,13 +15,13 @@ const renderHeader = (isDesktop) => (
       href="">
 
     </a>
-    <span>Práctica exámen teórico de conducción</span>
+    <span>Exámen teórico de conducción</span>
     {isDesktop && <a
       target="_blank"
       rel="noopener noreferrer"
       className="contributeLink"
-      href="https://github.com/freeCodeCamp/multiple-choice-questions">
-      Contribute <i className='fa fa-github'></i>
+      href="https://github.com/luucamay/multiple-choice-questions">
+      Contribuye <i className='fa fa-github'></i>
     </a>}
   </div>
 );
@@ -140,19 +140,20 @@ export default connectScreenSize(
                         <i className='fa fa-search'></i>
                       </Link>
                       <Link to={`/practice/${title}`} className={renderClassName(index)} onMouseEnter={this.onHover}>
-                        {title} <span>({challenges.size} questions)</span>
+                        {title} <span>({challenges.size} preguntas)</span>
                       </Link>
                     </div>
                   )
                 })}
                 <div className='quizContainer'>
                   <Link to='practice/shuffle' className={renderClassName(maxOptions - 1)} onMouseEnter={this.onHover}>
-                    Shuffle All Quizzes <span>({totalQuestions} questions)</span>
+                    Mezcla todo <span>({totalQuestions} preguntas)</span>
                   </Link>
                 </div>
                 <div className='quizContainer'>
                   <Link to="/about" className={renderClassName(maxOptions)} onMouseEnter={this.onHover}>
-                    Additional Information
+
+                    Informacion Adicional
                   </Link>
                 </div>
               </div>
