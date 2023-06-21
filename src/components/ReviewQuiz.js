@@ -22,13 +22,13 @@ const renderQuestion = (question, index) => {
 
         <div className="col-md-4 col-sm-6">
           <div className='reviewTitle'>
-            <h1>Question {index + 1}</h1>
+            <h1>Pregunta {index + 1}</h1>
             <h1 className='questionTitle'>{renderMarkup(title)}</h1>
           </div>
         </div>
 
         <div className="col-md-4 col-sm-6">
-          <h1>Choices</h1>
+          <h1>Opciones</h1>
           {choices.map((choice, index) => (
             <div
               key={choice}
@@ -41,7 +41,7 @@ const renderQuestion = (question, index) => {
         <div className="col-md-4 col-sm-12">
           {explanation && (
             <div className='explanation'>
-              <h1>Explanation</h1>
+              <h1>Explicación</h1>
               <p>{renderMarkup(explanation)}</p>
             </div>
           )}

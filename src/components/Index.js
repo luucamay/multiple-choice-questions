@@ -147,13 +147,13 @@ export default connectScreenSize(
                 })}
                 <div className='quizContainer'>
                   <Link to='practice/shuffle' className={renderClassName(maxOptions - 1)} onMouseEnter={this.onHover}>
-                    Mezcla todo <span>({totalQuestions} preguntas)</span>
+                    Todo mezclado <span>({totalQuestions} preguntas)</span>
                   </Link>
                 </div>
                 <div className='quizContainer'>
                   <Link to="/about" className={renderClassName(maxOptions)} onMouseEnter={this.onHover}>
 
-                    Informacion Adicional
+                    Información Adicional
                   </Link>
                 </div>
               </div>

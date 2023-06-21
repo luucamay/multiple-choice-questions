@@ -184,8 +184,8 @@ export default class Quiz extends React.Component {
               <span>{quiz.get('title')}</span>
             </div>
             {!this.state.complete
-              ? <h3 className='quizMeta'>Question {index + 1} of {numberOfQuestions}</h3>
-              : <h3 className='quizMeta'>Quiz Complete</h3>}
+              ? <h3 className='quizMeta'>Pregunta {index + 1} de {numberOfQuestions}</h3>
+              : <h3 className='quizMeta'>Quiz Completado</h3>}
             {isDesktop && <span id="return">
               <Link to='/'>
                 <i className="fa fa-times-circle" aria-hidden="true"></i>
@@ -262,39 +262,39 @@ export default class Quiz extends React.Component {
           {answer !== null && !complete &&
             <div className='messageDiv'>
               {answer
-                ? <h1 className='correctAnswer'>Correct, great work!</h1>
-                : <h1 className='wrongAnswer'>Sorry, that is not correct!</h1>}
+                ? <h1 className='correctAnswer'>Correcto, buen trabajo!</h1>
+                : <h1 className='wrongAnswer'>Ups, eso es incorrecto!</h1>}
               {answer !== null && !answer && explanation && (
                 <div className='explanation'>
-                  <h3>Explanation:</h3>
+                  <h3>Explicación:</h3>
                   <p>{this.renderMarkup(explanation)}</p>
                 </div>
               )}
               {index + 1 === numberOfQuestions
-                ? <button onClick={this.nextQuestion}>View Results</button>
-                : <button onClick={this.nextQuestion}>Next Question</button>}
+                ? <button onClick={this.nextQuestion}>Ver Resultados</button>
+                : <button onClick={this.nextQuestion}>Siguiente pregunta</button>}
             </div>}
 
           {complete &&
             <div>
               <h1 className='scoreMessage'>
-                You scored {score} correct out of {numberOfQuestions} questions! {percentage > 0.75 ? 'Nice work!' : 'Better luck next time!'}
+                Lograste {score} correctas de {numberOfQuestions} preguntas! {percentage > 0.75 ? 'Buen trabajo!' : 'Suerte la próxima vez!'}
               </h1>
               <Link className='finishBtn' to='/' onClick={() => this.props.finishQuiz()}>
-                <button>Return to Quiz Page</button>
+                <button>Regresar a la página de retos</button>
               </Link>
               <button className='fbShare'>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.facebook.com/sharer/sharer.php?u=http://fcc-quiz.surge.sh/">
-                  Share on Facebook
+                  Compartir en Facebook
                 </a>
               </button>
             </div>}
 
           {!isMobile && <div id='infoBox'>
-            <p>Use <i className='fa fa-long-arrow-up'></i> <i className='fa fa-long-arrow-down'></i> space and esc</p>
+            <p>Usa <i className='fa fa-long-arrow-up'></i> <i className='fa fa-long-arrow-down'></i> espacio y esc</p>
           </div>}
 
         </div>
