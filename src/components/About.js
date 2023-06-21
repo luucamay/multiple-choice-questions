@@ -31,7 +31,7 @@ export default connectScreenSize(mapScreenSizeToProps)(
             </div>
             <div className='about'>
               <h1>Acerca de Exámen Teórico para Licencia de Conducción Bolivia</h1>
-              <p>Puedes practicar para el exámen práctico para la licencia de conducir aquí.</p>
+              <p>Puedes practicar para el exámen práctico para la licencia de conducir aquí, si la categoría de tu exámen es profesional responderás 50 preguntas y tienes 30 minutos, pero si no solo responderás 30 preguntas con 20 minutos de duración.</p>
               <p>Este es un banco de preguntas de las diferentes categorías que se evaluarán
                 durante el exámen escrito para obtener tu licencia de conducir.</p>
               <p>Esta aplicación ha sido dessarrollada por <a
